@@ -24,3 +24,11 @@ a[href="#"] {
   font-weight: 400;
   background-color: #eaeaea;
 }
+
+.short_desc {
+  color: red;
+}
+
+.full_desc li {
+  color: green;
+}
