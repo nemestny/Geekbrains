@@ -7,9 +7,8 @@ body {
   list-style-type: none;
 }
 
-.menu li a {
+.menu a {
   text-decoration: none;
-  font-family: sans-serif;
   font-size: 18px;
   color: gray;
 }
@@ -29,6 +28,6 @@ a[href="#"] {
   color: red;
 }
 
-.full_desc li {
+.full_desc {
   color: green;
 }
