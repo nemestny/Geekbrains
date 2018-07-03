@@ -24,6 +24,10 @@ a[href="#"] {
   background-color: #eaeaea;
 }
 
+.product img {
+  outline: 6px solid #eaeaea;
+}
+
 .short_description {
   color: #707070;
   font-size: 18px;
@@ -40,11 +44,42 @@ a[href="#"] {
 }
 
 .specifications {
-  color: darkblue;
+  color: #111111;
   font-size: 14px;
   line-height: 16px;
 }
 
 .specifications > ul {
   list-style-image: url(catalog/img/li-15.png);
+}
+
+.contacts {
+  color: #191919;
+  line-height: 25px;
+  width: 400px;
+  clear: both;
+}
+
+.contacts input[type="text"]
+{
+  height: 18px;
+  width: 70%;
+  float: right;
+  clear: both;
+}
+
+.contacts input[type="text"],
+.contacts select,
+.contacts textarea
+{
+  font-weight: 600
+}
+
+.catalog ul {
+  list-style-type: none;
+}
+.catalog a {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
 }
