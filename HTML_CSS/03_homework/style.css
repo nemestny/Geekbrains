@@ -1,6 +1,6 @@
 body {
   background-color: #f8f8f8;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 .menu {
@@ -24,10 +24,27 @@ a[href="#"] {
   background-color: #eaeaea;
 }
 
-.short_desc {
-  color: red;
+.short_description {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
 }
 
-.full_desc {
-  color: green;
+.full_description {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.specifications {
+  color: darkblue;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.specifications > ul {
+  list-style-image: url(catalog/img/li-15.png);
 }
