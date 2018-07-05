@@ -9,7 +9,7 @@ def colors(index)
             'голубой',
             'синий',
             'фиолетовый']
-  return nil unless colors[index]
+  # return nil unless colors[index]
   colors[index]
 end
 
