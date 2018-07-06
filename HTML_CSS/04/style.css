@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f8f8;
+}
+
+
+.heading {
+    color: red;
+    background-color: #ccc;
+    border: 10px solid black;
+    text-align: center;
+}
+img[alt="phone"] {
+    border: 4px solid #f8f8f8;
+}
+
+.blue {
+    color: blue;
+    background: url(img/phone_small.jpg) no-repeat 30px 40px;
+}
+
+
+.list {
+    list-style-type: none;
+}
+
+.list + p {
+    color: darkgreen;
+}
+
+.list > li {
+    width: 70px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h1,
+h3,
+p {
+    text-align: center!important;
+}
+
+p {
+    font-size: 1em;
+    text-align: left;
+}
