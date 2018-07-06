@@ -70,7 +70,8 @@ a[href="#"] {
   clear: both;
 }
 
-.contacts input[type="text"]
+.contacts input[type="text"],
+.contacts input[type="email"]
 {
   height: 18px;
   width: 70%;
@@ -79,10 +80,21 @@ a[href="#"] {
 }
 
 .contacts input[type="text"],
+.contacts input[type="email"],
 .contacts select,
 .contacts textarea
 {
   font-weight: 600
+}
+
+.contacts input[type="email"]:focus {
+  color: green;
+  background-color: lightgrey;
+}
+
+.contacts input[type="text"],
+.contacts textarea {
+  text-transform: capitalize;
 }
 
 .catalog ul {
