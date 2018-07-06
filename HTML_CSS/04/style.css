@@ -1,39 +1,9 @@
-.phone_table {
+div {
+  height: 200px;
   border: 1px solid #000;
-  width: 400px;
-  height: 300px;
-/*  border-spacing: 10px;*/
-  border-collapse: collapse;
 }
 
-.phone_table td {
+span {
+  color: red;
   border: 1px solid #000;
-  padding-left: 10px;
-  vertical-align: middle;
-  text-align: center;
-
-}
-
-.five {
-  background-color: gray;
-}
-
-.menu li {
-  list-style-type: none;
-}
-
-.list li:nth-child(3):after {
-  content: "new";
-  color: blueviolet;
-  text-transform: uppercase;
-}
-
-.menu li:hover::before {
-  content: " >>";
-    color:red;
-}
-
-.text:first-letter {
-  font-size: 30px;
-  color: brown;
 }
