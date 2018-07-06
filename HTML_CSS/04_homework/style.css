@@ -38,6 +38,10 @@ a[href="#"] {
   outline: 6px solid #eaeaea;
 }
 
+.product img:hover {
+  outline: 0px;
+}
+
 .short_description {
   color: #707070;
   font-size: 18px;
