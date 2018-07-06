@@ -1,0 +1,85 @@
+body {
+  background-color: #f8f8f8;
+  font-family: monospace;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gray;
+}
+
+a[href="#"] {
+  font-weight: 600;
+}
+
+.product h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+.product img {
+  outline: 6px solid #eaeaea;
+}
+
+.short_description {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+.full_description {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.specifications {
+  color: #111111;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.specifications > ul {
+  list-style-image: url(catalog/img/li-15.png);
+}
+
+.contacts {
+  color: #191919;
+  line-height: 25px;
+  width: 400px;
+  clear: both;
+}
+
+.contacts input[type="text"]
+{
+  height: 18px;
+  width: 70%;
+  float: right;
+  clear: both;
+}
+
+.contacts input[type="text"],
+.contacts select,
+.contacts textarea
+{
+  font-weight: 600
+}
+
+.catalog ul {
+  list-style-type: none;
+}
+.catalog a {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+}
