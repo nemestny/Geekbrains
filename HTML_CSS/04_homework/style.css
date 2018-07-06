@@ -9,6 +9,8 @@ body {
 
 .menu {
   list-style-type: none;
+  padding: 0;
+  
 }
 
 .menu a {
@@ -18,7 +20,7 @@ body {
 }
 
 .menu a:hover {
-  color: darkslateblue;
+  color: darkgreen;
 }
 
 a[href="#"] {
