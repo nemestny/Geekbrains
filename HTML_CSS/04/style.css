@@ -1,3 +1,31 @@
+.menu li:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+}
+
+.menu li:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.menu li:nth-child(2n-1) {
+  background-color: #ccc;
+}
+
+.menu li:nth-child(2n) a {
+  color: orange;
+}
+
+.menu li {
+  width: 100px;
+  height: 30px;
+  list-style-type: none;
+  border: 1px solid #000;
+  text-align: center;
+}
+
 .menu li a:hover {
 color: red;
 }
