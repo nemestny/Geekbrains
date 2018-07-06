@@ -1,13 +1,22 @@
-table {
+.phone_table {
   border: 1px solid #000;
   width: 400px;
-  height: 200px;
+  height: 300px;
+/*  border-spacing: 10px;*/
+  border-collapse: collapse;
 }
 
-td {
+.phone_table td {
   border: 1px solid #000;
+  padding-left: 10px;
+  vertical-align: middle;
+  text-align: center;
+
 }
 
+.five {
+  background-color: gray;
+}
 
 .menu li {
   list-style-type: none;
