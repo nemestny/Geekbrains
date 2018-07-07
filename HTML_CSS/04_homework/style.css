@@ -63,9 +63,15 @@ a[href="#"] {
   line-height: 16px;
 }
 
-.specifications > ul {
-  list-style-image: url(catalog/img/li-15.png);
+.specifications table {
+  border: 1px solid grey;
+  border-collapse: collapse;
 }
+
+.specifications table td {
+  border: 1px solid grey;
+}
+
 
 .contacts {
   color: #191919;
