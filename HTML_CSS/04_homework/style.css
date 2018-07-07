@@ -42,6 +42,12 @@ a[href="#"] {
   outline: 0px;
 }
 
+.product p::first-letter {
+  color: darkgreen;
+  font-size: 24px;
+  font-family: fantasy;
+}
+
 .short_description {
   color: #707070;
   font-size: 18px;
@@ -72,6 +78,9 @@ a[href="#"] {
   border: 1px solid grey;
 }
 
+.specifications table th {
+  height: 30px;
+}
 
 .contacts {
   color: #191919;
