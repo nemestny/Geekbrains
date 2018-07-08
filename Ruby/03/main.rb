@@ -1,17 +1,5 @@
-class Ticket
-  def date=(date)
-    @date = date    
-  end
+require_relative 'site/helloworld.rb'
 
-  def date
-    @date
-  end
-end
-
-ticket = Ticket.new
-ticket.date='01'
-
-ticket2 = Ticket.new
-ticket2.date = 'hhghg'
-puts ticket.date
-puts ticket2.date
+hello = Site::HelloWorld.new
+puts hello.say
+puts Site::HelloWorld::MESSAGE
