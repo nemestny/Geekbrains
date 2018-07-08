@@ -1,5 +1,7 @@
-require_relative 'site/helloworld.rb'
+$stdout = StringIO.new
+puts 'Hello World'
+File.write('output.log',$stdout.string)
 
-hello = Site::HelloWorld.new
-puts hello.say
-puts Site::HelloWorld::MESSAGE
+# $stdout = STDOUT
+
+STDOUT.puts 'Hello ruby World'
