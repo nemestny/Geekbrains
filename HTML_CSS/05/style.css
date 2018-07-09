@@ -1,14 +1,19 @@
-.menu > li {
-  width: 150px;
-  height: 50px;
-  border: 1px solid #000;
-  list-style-type: none;
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin-top: 50px;
+  margin-left: 100px;
+  outline: 4px solid #000;
 }
 
-.menu li ul {
-  display: none;
+.logo:hover {
+  outline: none;
 }
 
-.menu li:hover ul {
-  display: block;
+.menu li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
