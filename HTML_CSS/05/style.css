@@ -5,8 +5,10 @@
   list-style-type: none;
 }
 
-.menu a {
-  width: 100%;
+.menu li ul {
+  display: none;
+}
+
+.menu li:hover ul {
   display: block;
-  height: 50px;
 }
