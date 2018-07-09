@@ -1,0 +1,129 @@
+body {
+  background-color: #f8f8f8;
+  font-family: monospace;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}git a
+
+.header {
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gray;
+}
+
+.menu a:hover {
+  color: darkgreen;
+}
+
+a[href="#"] {
+  font-weight: 600;
+}
+
+.product h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+.product img {
+  outline: 6px solid #eaeaea;
+}
+
+.product img:hover {
+  outline: 0px;
+}
+
+.product p::first-letter {
+  color: darkgreen;
+  font-size: 24px;
+  font-family: fantasy;
+}
+
+.short_description {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+
+.full_description {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.specifications {
+  color: #111111;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.specifications table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.specifications table td {
+  border: 1px solid grey;
+}
+
+.specifications table th {
+  height: 30px;
+}
+
+.contacts {
+  color: #191919;
+  line-height: 25px;
+  width: 400px;
+  clear: both;
+}
+
+.contacts input[type="text"],
+.contacts input[type="email"]
+{
+  height: 18px;
+  width: 70%;
+  float: right;
+  clear: both;
+}
+
+.contacts input[type="text"],
+.contacts input[type="email"],
+.contacts select,
+.contacts textarea
+{
+  font-weight: 600
+}
+
+.contacts input[type="email"]:focus {
+  color: green;
+  background-color: lightgrey;
+}
+
+.contacts input[type="text"],
+.contacts textarea {
+  text-transform: capitalize;
+}
+
+.catalog ul {
+  list-style-type: none;
+}
+.catalog a {
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+}
