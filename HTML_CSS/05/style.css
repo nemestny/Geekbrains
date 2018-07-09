@@ -1,19 +1,13 @@
-.logo {
-  width: 100px;
-  height: 100px;
+.product {
+  width: 200px;
+  height: 150px;
+  outline: 1px solid black;
+  float: left;
+}
+
+.footer {
+  height: 300px;
   background-color: #ccc;
-  margin-top: 50px;
-  margin-left: 100px;
-  outline: 4px solid #000;
-}
-
-.logo:hover {
-  outline: none;
-}
-
-.menu li {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  overflow: hidden;
+/*  clear: both;*/
 }
