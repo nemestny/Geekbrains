@@ -1,0 +1,10 @@
+.menu > li {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline;
+}
