@@ -28,3 +28,4 @@ distance_y = (point01.y - point02.y).abs
 distance = (distance_x**2 + distance_y**2)**0.5
 
 puts "Расстояние между точками: #{distance}"
+puts format("Distance is %.2f",distance)
