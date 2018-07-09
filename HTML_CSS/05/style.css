@@ -5,6 +5,8 @@
   list-style-type: none;
 }
 
-.menu li {
-  display: inline;
+.menu a {
+  width: 100%;
+  display: block;
+  height: 50px;
 }
