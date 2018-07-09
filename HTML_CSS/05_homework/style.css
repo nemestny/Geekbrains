@@ -6,14 +6,22 @@ body {
 .container {
   width: 600px;
   margin: 0 auto;
-}git a
-
-.header {
 }
 
-.menu {
+.header {
+  height: 100px;
+}
+
+.logo {
+  float: left
+}
+
+.menu ul {
   list-style-type: none;
-  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
 }
 
 .menu a {
