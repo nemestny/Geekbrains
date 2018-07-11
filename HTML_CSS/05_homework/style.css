@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -50,6 +50,10 @@ a[href="#"] {
   font-weight: 600;
 }
 
+.product {
+  position: relative;
+}
+
 .product h3 {
   color: black;
   font-size: 18px;
@@ -71,11 +75,40 @@ a[href="#"] {
   font-family: fantasy;
 }
 
+.product_img {
+ float: left;
+  padding-right: 10px;
+ }
+
+.buy {
+/*
+  position: absolute;
+  top: 0px;
+  right: 0px;
+*/
+  width: 100%;
+  height: 50px;
+  background-color: darkgray;
+  color: darkgreen;
+  font-size: 40px;
+  text-align: right;
+}
+
+.buy button {
+/*  width: 100px;*/
+/*  height: 30px;*/
+  vertical-align: middle;
+  color: darkgreen;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 .short_description {
   color: #707070;
   font-size: 18px;
   font-weight: 400;
-  background-color: #eaeaea;
+/*  background-color: #eaeaea;*/
+/*  overflow: hidden;*/
 }
 
 .full_description {
@@ -99,6 +132,7 @@ a[href="#"] {
 
 .specifications table td {
   border: 1px solid grey;
+  padding-left: 10px;
 }
 
 .specifications table th {
