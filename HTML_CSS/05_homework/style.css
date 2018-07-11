@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-  width: 800px;
+  min-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -81,34 +82,40 @@ a[href="#"] {
  }
 
 .buy {
-/*
-  position: absolute;
-  top: 0px;
-  right: 0px;
-*/
   width: 100%;
   height: 50px;
   background-color: darkgray;
   color: darkgreen;
   font-size: 40px;
   text-align: right;
+  clear: both;
 }
 
 .buy button {
-/*  width: 100px;*/
-/*  height: 30px;*/
   vertical-align: middle;
   color: darkgreen;
   font-size: 20px;
   margin-right: 10px;
 }
 
+.buy button:hover {
+  background-color: darkgreen;
+  color: lightgray;
+}
+
+.buy button:active {
+  background-color: darkgrey;
+}
+
 .short_description {
   color: #707070;
   font-size: 18px;
   font-weight: 400;
-/*  background-color: #eaeaea;*/
-/*  overflow: hidden;*/
+  overflow: hidden;
+}
+
+.short_description p {
+  margin-top: 0px;
 }
 
 .full_description {
@@ -171,7 +178,10 @@ a[href="#"] {
   text-transform: capitalize;
 }
 
-.catalog {}
+.map {
+  width: 100%;
+  height: 374px;
+}
 
 .catalog_cell {
   width: 150px;
