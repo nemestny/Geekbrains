@@ -10,7 +10,6 @@ body {
 
 .header {
   height: 110px;
-/*  display: block;*/
   position: relative;
 }
 
@@ -25,8 +24,6 @@ body {
   position: absolute;
   bottom: 10px;
   right: 10px;
-/*  vertical-align: bottom;*/
-
 }
 
 .menu ul {
@@ -116,8 +113,7 @@ a[href="#"] {
 }
 
 .contacts input[type="text"],
-.contacts input[type="email"]
-{
+.contacts input[type="email"] {
   height: 18px;
   width: 70%;
   float: right;
@@ -127,8 +123,7 @@ a[href="#"] {
 .contacts input[type="text"],
 .contacts input[type="email"],
 .contacts select,
-.contacts textarea
-{
+.contacts textarea {
   font-weight: 600
 }
 
@@ -142,19 +137,41 @@ a[href="#"] {
   text-transform: capitalize;
 }
 
-.catalog ul {
-  list-style-type: none;
+.catalog {}
+
+.catalog_cell {
+  width: 150px;
+  height: 200px;
+  background-color: #eaeaea;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  vertical-align: text-bottom;
 }
+
 .catalog a {
   text-decoration: none;
   font-size: 14px;
   color: gray;
 }
 
+.catalog_img {
+  text-align: center;
+  padding-top: 10px;
+  height: 50%;
+}
+
+.catalog_cell p {
+  margin-left: 10px;
+}
+
 .footer {
   height: 100px;
   background-color: #eaeaea;
   text-align: right;
+  clear: both;
 }
 
 .footer p {
