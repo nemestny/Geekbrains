@@ -15,11 +15,6 @@ body {
 }
 
 .logo {
-/*  float: left;*/
-/*  background-color: blueviolet;*/
-/*  height: 100px;*/
-/*  width: 100px;*/
-/*  display: inline-block;*/
   position: absolute;
   top: 10px;
   left: 10px;
@@ -27,9 +22,6 @@ body {
 
 .menu {
   height: 20px;
-/*  width: 300px;*/
-/*  background-color: aqua;*/
-/*  display: inline-block;*/
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -41,8 +33,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-/*  position: absolute;*/
-/*  bottom: 0px;*/
 }
 
 .menu ul li {
@@ -159,4 +149,15 @@ a[href="#"] {
   text-decoration: none;
   font-size: 14px;
   color: gray;
+}
+
+.footer {
+  height: 100px;
+  background-color: #eaeaea;
+  text-align: right;
+}
+
+.footer p {
+  margin-top: 10px;
+  margin-right: 10px;
 }
