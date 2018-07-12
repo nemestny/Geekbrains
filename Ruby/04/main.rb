@@ -1,10 +1,12 @@
-arr = [1,2,3,4,5]
-p arr
+def my_loop
+  n = 0
+  puts 'Начало метода'
+  yield n+=1
+  yield n+=1
+  yield n+=1
+  puts 'Завершение метода'
+end
 
-p arr.map {|x| x.even?}
-p arr.select {|x| x.even?}
-p arr.reject {|x| x.even?}
-p arr.reduce(10) {|fact,x| fact*x}
-
-arr.tap {|x| puts x}.map! {|x| x*x}
-p arr
+my_loop do |num|
+  puts "Итерация #{num}"
+end
