@@ -1,1 +1,1 @@
-p ['cat', 'dog', 'tiger'].tap { |x| @origin = x }.map(&:upcase) + @origin
+p %w[cat dog tiger].tap { |x| @origin = x }.map(&:upcase) + @origin
