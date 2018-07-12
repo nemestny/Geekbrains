@@ -1,8 +1,3 @@
-def my_loop(&block)
-  return unless block_given?
-  block.call while true
-end
+require_relative 'tree'
 
-my_loop do
-  puts 'hello'
-end
+p TREE
