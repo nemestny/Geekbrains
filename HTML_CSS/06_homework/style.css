@@ -18,23 +18,27 @@
   background-image: url(img/slider-img.jpg);
 }
 
-.header .logo {
+.navbar {
+  height: 90px;
+}
+
+.navbar .logo {
   margin-left: 98px;
   margin-top: 63px;
 }
 
-.menu {
+.navbar .menu {
   float: right;
-  margin-right: 211px;
-  margin-top: 67px;
+  margin-right: 4px;
+  margin-top: 56px;
 }
 
-.menu li {
+.navbar .menu li {
   float: left;
   list-style-type: none;
 }
 
-.menu li a {
+.navbar .menu li a {
   font-family: 'Montserrat';
   text-decoration: none;
   color: #8c8c8c;
@@ -45,10 +49,16 @@
   padding: 0 13px;
 }
 
-.menu li a:hover {
+.navbar .menu li a:hover {
   color: #212121;
   font-weight: 700;
   border-bottom: 3px solid black;
+}
+
+.navbar .search {
+  float: right;
+  margin-top: 63px;
+  margin-right: 167px;
 }
 
 .slider-content {
