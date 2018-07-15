@@ -111,10 +111,73 @@
 
 .featured-product {
   width: 1171px;
-  height: 369px;
+  height: 370px;
   margin-top: 120px;
   margin-left: 98px;
-  background-color: aquamarine
+/*  background-color: aquamarine*/
+}
+
+.featured-head {
+  height: 100px;
+}
+
+.featured-product .tab-controll {
+/*  background-color: blue;*/
+  width: 300px;
+  height: 49px;
+  float: left;
+}
+
+.featured-product .tab-controll li{
+  list-style-type: none;
+  float: left;
+}
+
+.featured-product .tab-controll a{
+  font-family: Montserrat;
+  color:  #6c6c6c;
+  font-size: 36px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  padding: 0 11px;
+  border-bottom: 1px solid #212121;
+}
+
+.featured-product .tab-controll a:hover{
+  color:  #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.featured-product .bnt-ghost {
+  float: right;
+  margin-top: 18px;
+  font-family: Montserrat;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+/*  line-height: 24px;*/
+
+  text-decoration: none;
+}
+
+.featured-product .bnt-ghost img {
+  margin-left: 12px;
+}
+
+.featured-product .tab-content {
+  height: 270px;
+  background-color: bisque;
+/*  border-spacing: 30px 0;*/
+}
+
+.feat-product {
+  width: 270px;
+  height: 270px;
+  display: inline-block;
+  background-color: azure;
+  
 }
 
 .promo-product {
