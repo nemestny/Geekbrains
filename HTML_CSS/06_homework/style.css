@@ -289,7 +289,7 @@
 }
 
 .exclusive-product {
-/*  background-color: aqua;*/
+  /*  background-color: aqua;*/
   width: 1170px;
   height: 570px;
   margin-top: 120px;
@@ -312,7 +312,7 @@
 .exclusive-item-sm {
   width: 270px;
   height: 270px;
-/*  background-color: antiquewhite;*/
+  /*  background-color: antiquewhite;*/
   display: inline-block;
   margin-bottom: 26px;
   margin-right: 26px;
@@ -347,4 +347,109 @@
 .footer {
   height: 384px;
   background-color: #f7f7f7;
+}
+
+.footer-1 {
+  width: 225px;
+  height: 139px;
+  margin-top: 120px;
+  margin-left: 97px;
+  /*  display: inline-block;*/
+  float: left;
+}
+
+.footer-2 {
+  width: 422px;
+  height: 101px;
+  margin-left: 80px;
+  margin-top: 120px;
+  /*  display: inline-block;*/
+  float: left;
+}
+
+.footer-3 {
+  width: 385px;
+  height: 147px;
+  margin-left: 78px;
+  margin-top: 120px;
+  /*  display: inline-block;*/
+  float: left;
+}
+
+.footer h3 {
+  font-family: Montserrat;
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.footer p {
+  font-family: Montserrat;
+  color: #212121;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 22px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin-bottom: 21px;
+}
+
+.footer .links-1 {
+  /*  display: inline-block;*/
+  float: left;
+}
+
+.footer .links-2 {
+  float: right;
+  /*  display: inline-block;*/
+}
+
+.footer .links li {
+  list-style-type: none;
+}
+
+.footer .links a {
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.footer .subscribe {
+  border: 1px solid #d9dee1;
+}
+
+.footer input[type="email"] {
+  border: none;
+  width: 315px;
+  height: 46px;
+  font-family: Montserrat;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 19px;
+/*
+  background-image: url(img/send.png);
+  background-repeat: no-repeat;
+  background-position: 350px 16px;
+*/
+}
+
+.footer input[type="submit"] {
+  border: none;
+  background-color: #ffffff;
+  width: 46px;
+  height: 46px;
+  background-image: url(img/send.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
