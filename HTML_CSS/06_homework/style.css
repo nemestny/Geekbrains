@@ -428,7 +428,7 @@
 
 .footer input[type="email"] {
   border: none;
-  width: 315px;
+  width: 313px;
   height: 46px;
   font-family: Montserrat;
   color: #6c6c6c;
@@ -437,11 +437,6 @@
   line-height: 22px;
   text-align: left;
   padding-left: 19px;
-/*
-  background-image: url(img/send.png);
-  background-repeat: no-repeat;
-  background-position: 350px 16px;
-*/
 }
 
 .footer input[type="submit"] {
@@ -452,4 +447,30 @@
   background-image: url(img/send.png);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.footer .copyright {
+  float: left;
+  width: 1171px;
+  /*  height: 10px;*/
+  margin-top: 77px;
+  margin-left: 98px;
+/*  background-color: aqua;*/
+}
+
+.footer .copyright h4 {
+  display: inline-block;
+  font-family: Montserrat;
+  color: #6c6c6c;
+  font-size: 12px;
+  font-weight: 700;
+/*  line-height: 26px;*/
+  text-align: left;
+/*  vertical-align: middle;*/
+}
+
+.footer .copyright img {
+  margin-left: 158px;
+  margin-right: 172px;
+/*  margin-bottom: 0px;*/
 }
