@@ -82,7 +82,7 @@
   font-size: 18px;
   font-weight: 700;
   /*  line-height: 48px;*/
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .content h2 {
@@ -94,9 +94,9 @@
 
 .content h1 {
   color: #212121;
-  font-size: 62px;
+  font-size: 58px;
   font-weight: 100;
-  line-height: 72px;
+/*  line-height: 72px;*/
 }
 
 .content p {
