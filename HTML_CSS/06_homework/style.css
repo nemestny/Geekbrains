@@ -201,9 +201,23 @@
 }
 
 .promo-product {
-  background-color: blueviolet;
+/*  background-color: blueviolet;*/
   height: 683px;
   margin-top: 120px;
+}
+
+.promo-item {
+  height: 100%;
+  width: 49.8%;
+  display: inline-block;
+}
+
+.promo-item-1 {
+  background-image: url(img/promo-product-1.jpg);
+}
+
+.promo-item-2 {
+  background-image: url(img/promo-product-2.jpg);
 }
 
 .trending-product {
