@@ -222,6 +222,10 @@
   display: inline-block;
 }
 
+.promo-item:hover .promo-content {
+  opacity: 1;
+}
+
 .promo-item-1 {
   background-image: url(img/promo-product-1.jpg);
 }
@@ -235,6 +239,11 @@
   margin-top: 228px;
   margin-left: 51px;
   width: 374px;
+  opacity: 0;
+}
+
+.promo-content .tag {
+  color:  #1e88e5;
 }
 
 .trending-product {
