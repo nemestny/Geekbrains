@@ -168,16 +168,36 @@
 
 .featured-product .tab-content {
   height: 270px;
-  background-color: bisque;
-/*  border-spacing: 30px 0;*/
+/*  background-color: bisque;*/
 }
 
 .feat-product {
   width: 270px;
   height: 270px;
   display: inline-block;
-  background-color: azure;
-  
+/*  background-color: azure;*/
+  margin-right: 26px;
+}
+
+.featured-product .feat-product:last-child {
+  margin-right: 0px;
+  background-color: aqua;
+}
+
+.feat-product-1 {
+  background-image: url(img/feat-product-1.jpg)
+}
+
+.feat-product-2 {
+  background-image: url(img/feat-product-2.jpg)
+}
+
+.feat-product-3 {
+  background-image: url(img/feat-product-3.jpg)
+}
+
+.feat-product-4 {
+  background-image: url(img/feat-product-4.jpg)
 }
 
 .promo-product {
