@@ -53,6 +53,7 @@
   color: #212121;
   font-weight: 700;
   border-bottom: 3px solid black;
+  padding: 0 11px;
 }
 
 .navbar .search {
@@ -70,6 +71,10 @@
 
 .slider-content .tag {
   color: #43a047;
+}
+
+.content {
+    float: left;
 }
 
 .content .tag {
@@ -223,7 +228,8 @@
 }
 
 .promo-item:hover .promo-content {
-  opacity: 1;
+/*  opacity: 1;*/
+  display: inherit;
 }
 
 .promo-item-1 {
@@ -239,7 +245,8 @@
   margin-top: 228px;
   margin-left: 51px;
   width: 374px;
-  opacity: 0;
+/*  opacity: 0;*/
+  display: none;
 }
 
 .promo-content .tag {
@@ -312,6 +319,20 @@
   background-image: url(img/slider-hot.jpg);
   height: 800px;
   margin-top: 120px;
+/*  float: none;*/
+}
+
+.hot-content {
+  font-family: 'Montserrat';
+  margin-top: 288px;
+  margin-left: 94px;
+  width: 490px;
+  height: 233px;
+/*  display: none;*/
+}
+
+.hot-content .tag {
+  color:  #e53935;
 }
 
 .exclusive-product {
