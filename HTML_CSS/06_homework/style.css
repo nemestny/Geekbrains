@@ -89,14 +89,14 @@
   color: #212121;
   font-size: 36px;
   font-weight: 700;
-/*  margin-bottom: 19px;*/
+  /*  margin-bottom: 19px;*/
 }
 
 .content h1 {
   color: #212121;
   font-size: 58px;
   font-weight: 100;
-/*  line-height: 72px;*/
+  /*  line-height: 72px;*/
 }
 
 .content p {
@@ -108,7 +108,7 @@
   margin-bottom: 32px;
 }
 
-.content a {
+.content .btn-order {
   text-decoration: none;
   color: #212121;
   font-size: 18px;
@@ -364,7 +364,7 @@
   margin-left: 26px;
   width: 340px;
   /*  opacity: 0;*/
-    display: none;
+  display: none;
 }
 
 .exclusive-content .tag {
@@ -410,6 +410,29 @@
   background-image: url(img/mobile-back-img.jpg);
   height: 516px;
   margin-top: 120px;
+}
+
+.mobile-content {
+  font-family: 'Montserrat';
+  margin-top: 125px;
+  margin-left: 98px;
+  width: 450px;
+}
+
+.mobile-content .tag {
+  color: #6c6c6c;
+}
+
+.mobile-content .details {
+  color: #6c6c6c;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.mobile-content a img {
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 .footer {
