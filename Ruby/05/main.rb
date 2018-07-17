@@ -1,12 +1,7 @@
-class Worker
-  def hello
-    puts Error::SALARY
-  end
+ticket = Object.new
+
+def ticket.price
+  5.5
 end
 
-class Worker::Error
-  SALARY = 'Заработная плата должна быть больше нуля'
-  NAME = 'Введите корректное имя'
-end
-
-puts Worker::Error::SALARY
+puts ticket.price
