@@ -1,7 +1,19 @@
-ticket = Object.new
+class HelloWorld
+  # def HelloWorld.say
+  def self.say
+    'hello'
+  end
 
-def ticket.price
-  5.5
+  def instance_say
+    'instance hello'
+  end
 end
 
-puts ticket.price
+
+
+puts HelloWorld.say
+
+hello = HelloWorld.new
+puts hello.instance_say
+
+# puts HelloWorld.instance_say
