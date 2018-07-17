@@ -1,9 +1,8 @@
 class HelloWorld
-end
-
-class << HelloWorld
-  def say
-    'hello'
+  class << self
+    def say
+      'hello'
+    end
   end
 end
 
