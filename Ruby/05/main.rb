@@ -1,25 +1,29 @@
-class Rainbow
-  COLORS = {
-    red: 'красный',
-    orange: 'оранжевый',
-    yellow: 'желтый',
-    green: 'зеленый',
-    blue: 'голубой',
-    indigo: 'сининй',
-    violet: 'фиолетовый'
-  }
-
-  def method_missing(name)
-      COLORS[name]
+class Ticket
+  def initialize(date: '01.01.2018', price: 5.5)
+    set_price(price)
+    set_date(date)
   end
 
-  # COLORS.each do |method, name|
-  #   define_method method do
-  #     name
-  #   end
-  # end
+  def set_price(price)
+    @price = price
+  end
+
+  def price
+    @price
+  end
+
+  def set_date(date)
+    @date = date
+  end
+
+  def date
+    @date
+  end
+
 end
 
-r = Rainbow.new
-puts r.yellow
-puts r.red
+ticket1 = Ticket.new
+ticket2 = Ticket.new(price: 6.5, date: '02.03.1965')
+
+puts "Цена билета ticket1: #{ticket1.price}, дата поездки #{ticket1.date}"
+puts "Цена билета ticket2: #{ticket2.price}, дата поездки #{ticket2.date}"
