@@ -9,11 +9,15 @@ class Rainbow
     violet: 'фиолетовый'
   }
 
-  COLORS.each do |method, name|
-    define_method method do
-      name
-    end
+  def method_missing(name)
+      COLORS[name]
   end
+
+  # COLORS.each do |method, name|
+  #   define_method method do
+  #     name
+  #   end
+  # end
 end
 
 r = Rainbow.new
