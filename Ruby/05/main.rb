@@ -1,26 +1,10 @@
 class Ticket
+  attr_accessor :price, :date
+
   def initialize(date: '01.01.2018', price: 5.5)
     @price = price
     @date = date
   end
-
-  # def set_price(price)
-  def price=(price)
-    @price = price
-  end
-
-  def price
-    @price
-  end
-
-  def date=(date)
-    @date = date
-  end
-
-  def date
-    @date
-  end
-
 end
 
 ticket1 = Ticket.new
