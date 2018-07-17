@@ -1,25 +1,8 @@
-require_relative 'helloworld'
-
-h = HelloWorld.new
-
-puts h.say
-puts hello.say
-
-__END__
-hello_class = Class.new do
-	def say
-		'hello'
-	end
-end
-hello = hello_class.new
-puts hello.say
-
-__END__
 class HelloWorld
-	def say
-		'hello'
-	end
+	define_method :cube do |my_arg|
+    my_arg ** 3
+  end
 end
 
 hello = HelloWorld.new
-puts hello.say
+puts hello.cube(2)
