@@ -1,16 +1,17 @@
-module Hello
-  class World
-    def say
-      puts 'Определяем метод say в первый раз'
-    end
-  end
-
-  class World
-    def say
-      puts 'Определяем метод say во второй раз'
+X = 3
+module M
+  class C
+    X=2
+    class D
+      module M
+        X = 1 
+        puts X # 1  
+        puts ::X # 3
+      end
     end
   end
 end
 
-hello = Hello::World.new
-hello.say
+puts X # 3
+puts M::C::X #2
+puts M::C::D::M::X #1
