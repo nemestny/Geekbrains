@@ -1,17 +1,22 @@
-class Ticket
-  @@counter = 0
-
-  def initialize
-    @@counter += 1
+class Palette
+  def initialize(colors = [])
+    @colors = colors
+    @colors = yield if block_given?
   end
 
-  def counter
-    @@counter
+  def each
+    @colors.each { |c| yield c}    
   end
-
 end
 
-ticket1 = Ticket.new
-ticket2 = Ticket.new
+colors = %w[красный оранжевый желтый зеленый
+            голубой синий фиолетовый]
+pal = Palette.new(colors)
+pal.each { |color| puts color}
 
-puts "Количество билетов: #{ticket1.counter}"
+pal1 = Palette.new do 
+  %w[красный оранжевый желтый зеленый
+  голубой синий фиолетовый]
+end
+
+pal1.each { |color| puts color}
