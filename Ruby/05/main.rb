@@ -1,22 +1,23 @@
-class Palette
-  def initialize(colors = [])
-    @colors = colors
-    @colors = yield if block_given?
+class Ticket
+  def initialize(price:, status:)
+    @price = price
+    @status = status
   end
 
-  def each
-    @colors.each { |c| yield c}    
+  def price
+    @price
+  end
+
+  def status?
+    @status
   end
 end
 
-colors = %w[красный оранжевый желтый зеленый
-            голубой синий фиолетовый]
-pal = Palette.new(colors)
-pal.each { |color| puts color}
+ticket = Ticket.new(price: 5.5, status: false)
 
-pal1 = Palette.new do 
-  %w[красный оранжевый желтый зеленый
-  голубой синий фиолетовый]
+puts format('Цена билета %.2f',ticket.price)
+if ticket.status?
+  puts 'Билет продан'
+else
+  puts 'Билет доступен для покупки'
 end
-
-pal1.each { |color| puts color}
