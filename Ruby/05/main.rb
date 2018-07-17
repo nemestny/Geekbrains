@@ -3,7 +3,11 @@ class HelloWorld
     def say
       'hello'
     end
+    def world
+      'world'
+    end
   end
 end
 
 puts HelloWorld.say
+puts HelloWorld.world
