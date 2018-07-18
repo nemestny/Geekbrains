@@ -1,0 +1,15 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 200px;
+  background-color: darkcyan;
+}
+
+.nav {
+  width: 200px;
+  height: 200px;
+  background-color: darkblue;
+}
