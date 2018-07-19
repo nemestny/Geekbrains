@@ -153,7 +153,9 @@
   color: #212121;
   font-size: 36px;
   font-weight: 700;
-  /*  margin-bottom: 19px;*/
+  margin-top: 5px;
+  margin-bottom: -5px;
+  letter-spacing: -0.03em;
 }
 
 .content h1 {
@@ -207,10 +209,10 @@
 }
 
 .tab-controll {
-/*  width: 300px;*/
+  /*  width: 300px;*/
   height: 50px;
   float: left;
-/*
+  /*
   grid-column: span 12;
   grid-row: 2;
 */
@@ -224,7 +226,7 @@
 .tab-controll a {
   font-family: Montserrat;
   color: #6c6c6c;
-  font-size: 36px;
+  /*  font-size: 36px;*/
   letter-spacing: -0.03em;
   font-weight: 700;
   text-align: left;
@@ -241,22 +243,21 @@
   border-bottom: 3px solid #212121;
 }
 
-/*
 .featured-product .tab-controll a {
   font-size: 36px;
-  
 }
-*/
 
-.products .tab-controll {
+.products > .tab-controll {
   margin-top: 71px;
   margin-left: 98px;
   margin-bottom: 50px;
-  
 }
-.products .tab-controll a {
-  font-size: 18px;/* Приближение из-за подстановки шрифтов */
+
+.products > .tab-controll a {
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
 }
+
 
 /*
 .featured-product .tab-controll {
@@ -293,7 +294,7 @@
 
 .bnt-ghost {
   float: right;
-  margin-top: 19px;
+  margin-top: 20px;
   font-family: Montserrat;
   color: #212121;
   font-size: 18px;
@@ -358,7 +359,7 @@
   font-family: Montserrat;
   /*  padding-top: 60px;*/
   display: none;
-/*  display: grid;*/
+  /*  display: grid;*/
   grid-template-rows: 1fr auto 1fr;
 }
 
@@ -368,6 +369,8 @@
 .item:hover .product-content-hover {
   display: grid;
 }
+
+
 /*
 .trend-item:hover .product-content-hover {
   display: grid;
@@ -382,18 +385,18 @@
 */
 
 .product-content-hover img {
-/*  margin-top: 60px;*/
+  /*  margin-top: 60px;*/
 }
 
 .product-content-hover h3 {
   color: #212121;
   font-size: 21.91px;
   font-weight: 700;
-  line-height: 30px;
-  /*  text-align: center;*/
+  /* line-height: 30px; */
+  /* text-align: center; */
   transform: scaleX(1.0041);
-  margin-top: 16x;
-  margin-bottom: 20px;
+  margin-top: 2px;
+  margin-bottom: 12px;
 }
 
 .product-content-hover span {
@@ -406,7 +409,6 @@
   /*  text-align: center;*/
   transform: scaleX(1.0041);
 }
-
 
 .promo-product {
   /*  background-color: blueviolet;*/
@@ -439,11 +441,11 @@
 
 .promo-content {
   font-family: 'Montserrat';
-  margin-top: 228px;
+  margin-top: 224px;
   margin-left: 51px;
-  width: 374px;
+  width: 378px;
   /*  opacity: 0;*/
-/*  display: none;*/
+  /*  display: none;*/
 }
 
 .promo-content .tag {
@@ -452,20 +454,21 @@
 
 .trending-product {
   /*  background-color: bisque;*/
-  margin-top: 120px;
+  margin-top: 115px;
   margin-left: 98px;
   width: 1171px;
   height: 869px;
 }
 
 .trending-product .title {
-  height: 35px;
+  height: 40px
 }
 
 .trending-product .title h2 {
   font-family: Montserrat;
   color: #212121;
   font-size: 36px;
+  letter-spacing: -0.035em;
   font-weight: 700;
   float: left;
 }
@@ -487,12 +490,12 @@
 }
 */
 
+
 /*
 .trend-item .product-content-hover img {
   margin-top: 100px;
 }
 */
-
 
 
 /*
@@ -528,14 +531,14 @@
 .hot-deals {
   background-image: url(img/slider-hot.jpg);
   height: 800px;
-  margin-top: 120px;
+  margin-top: 125px;
   /*  float: none;*/
 }
 
 .hot-content {
   font-family: 'Montserrat';
-  margin-top: 288px;
-  margin-left: 94px;
+  margin-top: 282px;
+  margin-left: 97px;
   width: 490px;
   height: 233px;
   /*  display: none;*/
@@ -569,11 +572,11 @@
 
 .exclusive-content {
   font-family: 'Montserrat';
-  margin-top: 186px;
-  margin-left: 26px;
+  margin-top: 181px;
+  margin-left: 30px;
   width: 340px;
   /*  opacity: 0;*/
-/*  display: none;*/
+  /*  display: none;*/
 }
 
 .exclusive-content .tag {
@@ -624,13 +627,9 @@
   background-image: url(img/exclusive-product-5-sm.jpg);
 }
 
-
-
 .item {
-/*  background-color: aqua;*/
+  /*  background-color: aqua;*/
 }
-
-
 
 .item-1 {
   background-image: url(img/trend-item-1.jpg);
@@ -688,7 +687,7 @@
 
 .mobile-content {
   font-family: 'Montserrat';
-  margin-top: 125px;
+  margin-top: 117px;
   margin-left: 98px;
   width: 450px;
 }
@@ -706,7 +705,7 @@
 
 .mobile-content a img {
   padding-left: 0px;
-  padding-right: 10px;
+padding-right: 7px;
 }
 
 .footer {
@@ -717,8 +716,8 @@
 .footer-1 {
   width: 225px;
   height: 139px;
-  margin-top: 120px;
-  margin-left: 97px;
+    margin-top: 112px;
+    margin-left: 97px;
   /*  display: inline-block;*/
   float: left;
 }
@@ -726,8 +725,8 @@
 .footer-2 {
   width: 422px;
   height: 101px;
-  margin-left: 80px;
-  margin-top: 120px;
+    margin-left: 76px;
+    margin-top: 112px;
   /*  display: inline-block;*/
   float: left;
 }
@@ -735,8 +734,8 @@
 .footer-3 {
   width: 385px;
   height: 147px;
-  margin-left: 78px;
-  margin-top: 120px;
+    margin-left: 78px;
+    margin-top: 112px;
   /*  display: inline-block;*/
   float: left;
 }
