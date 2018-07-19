@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  background-color:bisque;
+}
+
+.header {
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.grid {
+/*  clear: both;*/
+  width: 1106px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 80px;
+  grid-gap: 15px;
+  
+}
+
+.product1_1 {
+  height: 400px;
+  width: 50%;
+  background-color: aqua;
+  
+  float: left;
+}
+
+.product_hot {
+  height: 100px;
+  clear: both;
+}
+
+.box_1 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.box_2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.box_3 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.box_4 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.box_6 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.product2_1_1 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.product2_1 {
+/*
+  grid-column: span 4;
+  grid-row: span 4;
+*/
+/*grid-area: 1/1/2/2;*/
+/*  height: 200px;*/
+}
