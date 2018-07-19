@@ -14,6 +14,36 @@
   margin: 0 auto;
 }
 
+.grid {
+/*  clear: both;*/
+  width: 1171px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 73px);
+  grid-auto-rows: 73px;
+  grid-gap: 26px;
+}
+
+.box_2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.box_3 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.box_4 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.box_6 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
 .header {
   height: 800px;
   background-image: url(img/slider-img.jpg);
@@ -187,24 +217,28 @@
 }
 
 .featured-product .tab-content {
-  height: 270px;
+/*  height: 270px;*/
   /*  background-color: bisque;*/
 }
 
+/*
 .feat-product {
   width: 270px;
   height: 270px;
   display: inline-block;
-  /*  background-color: azure;*/
+    background-color: azure;
   margin-right: 26px;
 }
+*/
 
 
 
+/*
 .featured-product .feat-product:last-child {
   margin-right: 0px;
   background-color: aqua;
 }
+*/
 
 .feat-product-1 {
   background-image: url(img/feat-product-1.jpg)
@@ -323,18 +357,20 @@
 }
 
 .trending-product .products {
-  height: 770px;
+/*  height: 770px;*/
   margin-top: 64px;
 }
 
+/*
 .trend-item {
   width: 370px;
   height: 370px;
   display: inline-block;
-  /*  background-color: aqua;*/
+    background-color: aqua;
   margin-right: 26px;
   margin-bottom: 26px;
 }
+*/
 
 .trend-item .product-content-hover img {
   margin-top: 100px;
@@ -344,9 +380,11 @@
   display: inherit;
 }
 
+/*
 .trend-item:nth-child(3n) {
   margin-right: 0px;
 }
+*/
 
 .trend-item-1 {
   background-image: url(img/trend-item-1.jpg);
@@ -399,16 +437,18 @@
 
 .exclusive-product {
   /*  background-color: aqua;*/
-  width: 1170px;
-  height: 570px;
+/*  width: 1170px;*/
+/*  height: 570px;*/
   margin-top: 120px;
   margin-left: 98px;
 }
 
 .exclusive-item-1 {
+/*
   width: 570px;
   height: 570px;
   float: left;
+*/
   background-image: url(img/exclusive-product-1-lg.jpg);
 }
 
@@ -425,24 +465,30 @@
   color: #1e88e5;
 }
 
+/*
 .exclusive-items {
   width: 570px;
   height: 570px;
   float: right;
 }
+*/
 
+/*
 .exclusive-item-sm {
   width: 270px;
   height: 270px;
-  /*  background-color: antiquewhite;*/
+    background-color: antiquewhite;
   display: inline-block;
   margin-bottom: 26px;
   margin-right: 26px;
 }
+*/
 
+/*
 .exclusive-item-sm:nth-child(2n) {
   margin-right: 0px;
 }
+*/
 
 .exclusive-item-2 {
   background-image: url(img/exclusive-product-2-sm.jpg);
