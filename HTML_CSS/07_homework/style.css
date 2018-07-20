@@ -51,6 +51,7 @@
   height: 800px;
   /*  float: left;*/
   background-image: url(img/slider-img.jpg);
+  position: relative;
 }
 
 .header-index:hover .btn-order img,
@@ -144,11 +145,30 @@
 }
 
 .slider-navigation {
-  float: left;
+  position: absolute;
+  bottom: 19px;
+/*  float: left;*/
   width: 100%;
   height: 40px;
-  margin-top: 160px;
-  /*  background-color: aqua;*/
+/*  margin-top: 141px;*/
+/*  margin-bottom: 0px;*/
+  background-image: url(img/slider-navi.png);
+  background-position: center;
+  text-align: center;
+  
+}
+
+.slider-navigation a img {
+  padding: 0 3px;
+  opacity: 0;
+}
+
+.slider-navigation a:hover img {
+  opacity: 1;
+}
+
+.slider-navigation a:active img {
+  opacity: 0.5;
 }
 
 .slider-content .tag {
@@ -588,6 +608,7 @@
   background-image: url(img/slider-hot.jpg);
   height: 800px;
   margin-top: 125px;
+  position: relative;
   /*  float: none;*/
 }
 
