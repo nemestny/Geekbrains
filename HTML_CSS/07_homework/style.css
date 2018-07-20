@@ -226,11 +226,10 @@
 }
 
 .featured-product {
-  width: 1171px;
-  height: 370px;
-  margin-top: 113px;
-  margin-left: 98px;
-  /*  background-color: aquamarine*/
+    width: 1171px;
+    height: 361px;
+    margin-top: 113px;
+    margin-left: 98px;
 }
 
 .featured-head {
@@ -286,14 +285,15 @@
 }
 
 .products > .tab-controll {
-  margin-top: 71px;
-  margin-left: 98px;
-  margin-bottom: 50px;
+    margin-top: 67px;
+    margin-left: 98px;
+    margin-bottom: 38px;
 }
 
 .products > .tab-controll a {
-  font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
+    font-size: 18px;
+    padding-right: 27px;
+    letter-spacing: 0.06em;
 }
 
 
@@ -467,12 +467,12 @@
 }
 
 .promo-product {
-  /*  background-color: blueviolet;*/
-  height: 683px;
-  margin-top: 125px;
-  display: grid;
-  /*  margin: 0 auto;*/
-  grid-template-columns: repeat(2, 1fr);
+    /* background-color: blueviolet; */
+    height: 683px;
+    margin-top: 136px;
+    display: grid;
+    /* margin: 0 auto; */
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .promo-item {
