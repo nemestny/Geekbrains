@@ -1,27 +1,15 @@
-class Page
-	attr_accessor :title, :body, :headers
-  def initialize(title:, body:, headers: [])
-    @title = title
-    @body = body
-    @headers = headers
+module MyNamespace
+  class Array
+    def to_s
+      'my_class'
+    end
   end
 end
 
-class News < Page
-  attr_accessor :date
-  def initialize(title:, body:, date:, headers: [])
-    @date = date
-    super(title: title, body: body, headers: headers)
-  end
-end
+p Array.new
+p MyNamespace::Array.new
 
-class About < Page
-  attr_accessor :phones, :address
-end
+puts '#'*30
 
-class PhotoCatalog < Page
-  attr_accessor :photos
-end
-
-n = News.new(title: 'Новость', body: 'Содержимое новости', date: Time.now)
-p n
+puts Array.new
+puts MyNamespace::Array.new
