@@ -5,7 +5,13 @@ module Hello
 end
 
 class Greet
-  extend Hello
+  prepend Hello
+  def say(name)
+    "Greet: hi, #{name}!"
+  end
 end
 
-puts Greet.say('world')
+greet = Greet.new
+puts greet.say('world')
+
+p Greet.ancestors
