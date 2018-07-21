@@ -1,30 +1,11 @@
-module Seo
-  attr_accessor :keywords, :seo_title, :description
+module Hello
+  def say(name)
+    "Hello, #{name}!"
+  end
 end
 
-class Page
-	attr_accessor :title, :body, :headers
+class Greet
+  extend Hello
 end
 
-class News < Page
-  include Seo
-  attr_accessor :date
-end
-
-class About < Page
-  include Seo
-  attr_accessor :phones, :addresses
-end
-
-class PhotoCatalog < Page
-  attr_accessor :photos
-end
-
-about = About.new
-
-about.title = 'О нас'
-about.body = 'Вы сможете обнаружить нас по адресам'
-about.phones = ['+7 920 4567722', '+7 920 4567733']
-about.keywords = 'Ruby, модули, подмешивание'
-
-p about
+puts Greet.say('world')
