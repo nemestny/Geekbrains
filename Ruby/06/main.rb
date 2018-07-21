@@ -1,15 +1,30 @@
-module MyNamespace
-  class Array
-    def to_s
-      'my_class'
-    end
-  end
+module Seo
+  attr_accessor :keywords, :seo_title, :description
 end
 
-p Array.new
-p MyNamespace::Array.new
+class Page
+	attr_accessor :title, :body, :headers
+end
 
-puts '#'*30
+class News < Page
+  include Seo
+  attr_accessor :date
+end
 
-puts Array.new
-puts MyNamespace::Array.new
+class About < Page
+  include Seo
+  attr_accessor :phones, :addresses
+end
+
+class PhotoCatalog < Page
+  attr_accessor :photos
+end
+
+about = About.new
+
+about.title = 'О нас'
+about.body = 'Вы сможете обнаружить нас по адресам'
+about.phones = ['+7 920 4567722', '+7 920 4567733']
+about.keywords = 'Ruby, модули, подмешивание'
+
+p about
