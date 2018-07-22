@@ -1,10 +1,9 @@
 class Ticket
-  puts 'Класс Ticket'
-  puts self
-  module Summary
-    puts 'Модуль Summary'
+  def price
     puts self
   end
-  puts 'Вернемся в Ticket'
-  puts self
 end
+
+ticket = Ticket.new
+ticket.price
+p ticket
