@@ -1,16 +1,14 @@
 class Ticket
-  attr_accessor :status, :price
+  attr_accessor :date, :price
 
-  def initialize(price:)
-    @price = price
-    @status = false    
-  end
-
-  def buy
-    @status = true
-    self
+  def initialize
+    yield self  
   end
 end
 
-ticket = Ticket.new(price: 5.5)
-puts ticket.buy.price
+price = Ticket.new do |t|
+          t.date = '01.10.2018'
+          t.price = 5.5
+        end
+
+p price
