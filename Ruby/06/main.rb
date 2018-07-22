@@ -1,21 +1,30 @@
-class Ticket
-  def price
-    price_format(5.5)
+class Person
+  attr_accessor :name
+
+  def initialize(name:, score:)
+   @name = name
+   @score = score
   end
 
-  def date
-    '01.10.2018'
+  def compare(user)
+    if @score > user.score
+      'Выигрывает первый игрок'
+    elsif @score < user.score
+      'Выигрывает второй игрок'
+    else
+      'Ничья'
+    end
   end
 
-  private
+  protected
+  # private
 
-  def price_format(price)
-    format('Цена билета %.2f',price)    
+  def score
+   @score
   end
-
 end
 
-ticket = Ticket.new
-p ticket.price
-p ticket.date
-# p ticket.price_format(5.6)
+user1 = Person.new(name: 'Первый игрок', score: 12)
+user2 = Person.new(name: 'Второй игрок', score: 8)
+
+puts user1.compare(user2)
