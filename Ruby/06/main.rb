@@ -1,8 +1,7 @@
-ticket = Object.new
-
-def ticket.price
-  self
+class Ticket
+  def self.price
+    puts 'Классовый метод, класс Ticket (синглтон-метод)'
+  end
 end
 
-puts ticket.price
-p ticket
+Ticket.price
