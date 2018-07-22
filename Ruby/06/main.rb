@@ -1,9 +1,8 @@
-class Ticket
-  def price
-    puts self
-  end
+ticket = Object.new
+
+def ticket.price
+  self
 end
 
-ticket = Ticket.new
-ticket.price
+puts ticket.price
 p ticket
