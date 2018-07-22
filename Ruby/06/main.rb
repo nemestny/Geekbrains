@@ -1,16 +1,15 @@
-class Rainbow
-  include Enumerable
+class Ticket
+  attr_accessor :price, :date
 
-  def each
-    yield 'красный'
-    yield 'оранжевый'
-    yield 'желтый'
-    yield 'зеленый'
-    yield 'голубой'
-    yield 'синий'
-    yield 'фиолетовый'
+  def initialize(price:, date:)
+    # @price = price
+    # @date = date
+    self.price = price
+    self.date = date
   end
 end
 
-r = Rainbow.new
-puts r.map(&:upcase)
+ticket = Ticket.new(price: 5.5, date: '01.10.2018')
+
+p ticket
+p Ticket.instance_methods(false)
