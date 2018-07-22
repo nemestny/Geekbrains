@@ -1,18 +1,33 @@
-class User
-  attr_accessor :name, :family, :patronymic 
-  def initialize(name:, family:, patronymic:)
-    @name = name
-    @family = family
-    @patronymic = patronymic
+module Duckable
+  def quack
+    'Кряк'
   end
 
-  def to_a
-    [@family, @name, @patronymic]
+  def swim
+    'Плавает как утка'
   end
-
-  alias to_ary to_a
 end
 
-user = User.new(family: 'Сидоров', name: 'Иван', patronymic: 'Петрович')
+class Duck
+  include Duckable
+end
 
-puts ['программист', 'ruby'] + user
+class PseudoDuck
+  include Duckable
+end
+
+duck = Duck.new
+object = PseudoDuck.new
+ticket = Object.new
+
+def ticket.quack
+  'Кряк'
+end
+
+def ticket.swim
+  'Плавает как утка'
+end
+
+puts 'duck - это утка' if duck.respond_to?(:quack) && duck.respond_to?(:swim)
+puts 'object - это утка' if object.respond_to?(:quack) && object.respond_to?(:swim)
+puts 'ticket - это утка' if ticket.respond_to?(:quack) && ticket.respond_to?(:swim)
