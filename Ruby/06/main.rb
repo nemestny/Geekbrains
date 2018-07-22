@@ -1,5 +1,13 @@
-class Person
-  private_class_method :new
+require 'singleton'
+
+class Factory
+  include Singleton
 end
 
-user = Person.new
+# factory = Factory.new
+# p factory
+
+factory1 = Factory.instance
+p factory1
+factory2 = Factory.instance
+p factory2
