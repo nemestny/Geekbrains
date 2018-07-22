@@ -1,4 +1,7 @@
 class Ticket
+
+  public
+
   def price
     5.5
   end
@@ -6,8 +9,6 @@ class Ticket
   def date
     '01.10.2018'
   end
-
-  public :price, :date
 end
 
 ticket = Ticket.new
