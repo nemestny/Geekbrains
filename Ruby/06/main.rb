@@ -1,7 +1,16 @@
 class Ticket
-  def self.price
-    puts 'Классовый метод, класс Ticket (синглтон-метод)'
+  attr_accessor :status, :price
+
+  def initialize(price:)
+    @price = price
+    @status = false    
+  end
+
+  def buy
+    @status = true
+    self
   end
 end
 
-Ticket.price
+ticket = Ticket.new(price: 5.5)
+puts ticket.buy.price
