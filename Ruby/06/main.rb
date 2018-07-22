@@ -1,14 +1,14 @@
 class Ticket
-  attr_accessor :date, :price
-
-  def initialize
-    yield self  
+  def price
+    5.5
   end
+
+  def date
+    '01.10.2018'
+  end
+
+  public :price, :date
 end
 
-price = Ticket.new do |t|
-          t.date = '01.10.2018'
-          t.price = 5.5
-        end
-
-p price
+ticket = Ticket.new
+p ticket.price
