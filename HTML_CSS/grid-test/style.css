@@ -6,7 +6,7 @@
 
 
 .container {
-  width: 1366px;
+  width: 1120px;
   margin: 0 auto;
   background-color:bisque;
 }
@@ -16,65 +16,34 @@
   background-color: aquamarine;
 }
 
-.grid {
-/*  clear: both;*/
-  width: 1106px;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 80px;
-  grid-gap: 15px;
+.big_box {
+  height: 200px;
+  padding: 50px;
   
 }
 
-.product1_1 {
-  height: 400px;
-  width: 50%;
-  background-color: aqua;
-  
+.small_box {
+  padding: 50px;
+    padding-right: 40px;
+    padding-right: 40px;
+}
+
+.product_5 {
+  width: 500px;
+  height: 500px;
   float: left;
+  margin-right: 10px;
+/*  margin-bottom: 10px;*/
 }
 
-.product_hot {
-  height: 100px;
+.product_1 {
+  width: 245px;
+  height: 245px;
+  float: left;
+    margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.clr {
   clear: both;
-}
-
-.box_1 {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-
-.box_2 {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.box_3 {
-  grid-column: span 3;
-  grid-row: span 3;
-}
-
-.box_4 {
-  grid-column: span 4;
-  grid-row: span 4;
-}
-
-.box_6 {
-  grid-column: span 6;
-  grid-row: span 6;
-}
-
-.product2_1_1 {
-  grid-column: span 6;
-  grid-row: span 6;
-}
-
-.product2_1 {
-/*
-  grid-column: span 4;
-  grid-row: span 4;
-*/
-/*grid-area: 1/1/2/2;*/
-/*  height: 200px;*/
 }
