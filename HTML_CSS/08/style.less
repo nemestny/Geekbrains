@@ -1,33 +1,33 @@
-@widthAll: 1000px;
+@widthAll: 1207px;
+@colorBack: #3cc;
 .header {
-  width: @widthAll;
-  margin: 0 auto;
+  .margin;
   height: 200px;
-  background-color: darkcyan;
+  background-color: @colorBack;
 }
 
-.main {
+.margin {
   width: @widthAll;
   margin: 0 auto;
-  background-color: navajowhite
 }
 
 .main {
+  background-color: @colorBack - #333;
   .block {
     outline: 1px solid black;
     width: @widthAll / 3 - 60px;
     height: 400px;
-    margin: 50px 30px;
+    margin: 40px 30px;
     float: left;
   }
   .clr {
     clear: both;
   }
+  .margin;
 }
 
 .footer {
-  width: @widthAll;
-  margin: 0 auto;
+  .margin;
   height: 200px;
-  background-color: #ccc;
+  background-color: @colorBack - #777;
 }
