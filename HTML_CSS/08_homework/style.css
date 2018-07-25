@@ -437,6 +437,18 @@
   background-image: url(img/exclusive-product-5-sm.jpg);
 }
 
+.mobile_app {
+  background-image: url(img/mobile-back-img.jpg);
+  height: 516px;
+/*  margin-top: 117px;*/
+}
+
+.mobile_app .content {
+  height: 516px;
+  width: 450px;
+  padding-left: 98px;
+}
+
 .clr {
     clear: both;
 }
