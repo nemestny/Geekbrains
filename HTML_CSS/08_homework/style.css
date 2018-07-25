@@ -61,8 +61,10 @@
 
 .product {
   float: left;
+  /*
   margin-right: 10px;
   margin-bottom: 10px;
+*/
 }
 
 .product .content {
@@ -133,20 +135,20 @@
   /*  opacity: 0;*/
 }
 
-.big_box {
+.big_box .product .content {
+  /*  width: 1366px;*/
+  /*  padding-left: 7%;*/
+  text-align: left;
+}
+
+.big_box_1 {
   width: 1366px;
   height: 710px;
   position: relative;
 }
 
-.big_box .product {
+.big_box_1 .product {
   width: 1366px;
-}
-
-.big_box .product .content {
-  /*  width: 1366px;*/
-  /*  padding-left: 7%;*/
-  text-align: left;
 }
 
 .big_box .slider-nav {
@@ -159,6 +161,17 @@
   left: 0px;
   text-align: center;
   /*  background-color: blue;*/
+}
+
+.big_box_2 {
+  width: 1366px;
+  height: 683px;
+}
+
+.big_box_2 .product {
+  width: 683px;
+  height: 683px;
+  background-color: bisque;
 }
 
 .trending_product {
@@ -181,8 +194,8 @@
 
 .small_box .title {
   height: 107px;
-  margin-bottom: 38px;
-  background-color: red;
+  /*  margin-bottom: 38px;*/
+  /*  background-color: red;*/
 }
 
 .small_box .title .tab_controll {
@@ -206,6 +219,17 @@
   padding-left: 7px;
   padding-right: 19px;
   padding-bottom: 10px;
+}
+
+.small_box .product {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.small_box .product .content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .small_box_4 .title .tab_controll a {
@@ -241,6 +265,45 @@
 
 .bnt-ghost:active {
   opacity: 0.3;
+}
+
+.small_box_4 .product {
+  width: 270px;
+  height: 270px;
+}
+
+.small_box_4 .product:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.small_box_4 .product .content {
+  width: 270px;
+  height: 270px;
+  text-align: center;
+}
+
+.feat-product-1 {
+  background-image: url(img/feat-product-1.jpg)
+}
+
+.feat-product-2 {
+  background-image: url(img/feat-product-2.jpg)
+}
+
+.feat-product-3 {
+  background-image: url(img/feat-product-3.jpg)
+}
+
+.feat-product-4 {
+  background-image: url(img/feat-product-4.jpg)
+}
+
+.promo-product-1 {
+  background-image: url(img/promo-product-1.jpg);
+}
+
+.promo-product-2 {
+  background-image: url(img/promo-product-2.jpg);
 }
 
 .small_box_5 {
