@@ -54,6 +54,7 @@
   letter-spacing: 0.1em;
   line-height: 34px;
   display: block;
+/*  display: inline-block;*/
   padding: 0 14px;
 }
 
@@ -260,7 +261,7 @@
 }
 
 .big_box_2 .product .content {
-  width: 683px;
+  width: 378px;
   height: 683px;
 }
 
@@ -280,6 +281,7 @@
 
 .promo_products .content {
   padding-left: 7%;
+/*  width: 378px;*/
 }
 
 .promo_products .tag {
@@ -458,6 +460,30 @@
   background-image: url(img/trend-item-6.jpg);
 }
 
+.load {
+  width: 100%;
+  font-family: icomoon;
+  
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 40px;
+/*  padding-left: 22px;*/
+}
+
+.load a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.load a:hover {
+  opacity: 0.6;
+}
+
+.load a:active {
+  opacity: 0.3;
+}
+
 .feat-product-1 {
   background-image: url(img/feat-product-1.jpg)
 }
@@ -552,7 +578,7 @@
 
 .small_box_5 .product:first-child .content {
   height: 570px;
-  width: 570px;
+  width: 340px;
   padding-left: 7%;
   text-align: left;
   margin-right: 30px;
