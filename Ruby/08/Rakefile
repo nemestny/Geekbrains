@@ -1,9 +1,10 @@
+require 'open-uri'
+
 task default: :load 
 
 desc 'Загружает страницу класса с ruby-doc.org'
 task :load do
-  puts 'TODO: load page (1)'
+  rubypage = open('https://ruby-doc.org/core-2.4.2/String.html')
+  puts rubypage.read
 end
-task :load do
-  puts 'TODO: load page (2)'
-end
+
