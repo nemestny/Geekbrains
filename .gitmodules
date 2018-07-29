@@ -1,0 +1,3 @@
+[submodule "Ruby/08/hello"]
+	path = Ruby/08/hello
+	url = https://github.com/nemestny/hello.git
