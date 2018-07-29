@@ -1,0 +1,9 @@
+task default: :load 
+
+desc 'Загружает страницу класса с ruby-doc.org'
+task :load do
+  puts 'TODO: load page (1)'
+end
+task :load do
+  puts 'TODO: load page (2)'
+end
