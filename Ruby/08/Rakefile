@@ -1,5 +1,9 @@
 require 'open-uri'
 
+require 'rubygems'
+require 'ruby-progressbar'
+require 'bundler/setup'
+
 task default: :load 
 
 namespace :docs do
@@ -8,9 +12,11 @@ namespace :docs do
     name = arg[:klasses]
     ext = arg.extras
     ext.insert(0, name)
+    progressbar = ProgressBar.create(total: ext.size)
     ext.compact.each do  |klass|
         url = format('https://ruby-doc.org/core-2.4.2/%s.html',klass)
         File.write("#{klass}.txt",open(url).read)
+        progressbar.increment
     end
     # rubypage = open('https://ruby-doc.org/core-2.4.2/String.html')
     # puts rubypage.read

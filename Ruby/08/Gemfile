@@ -6,6 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 gem 'rake'
+gem 'ruby-progressbar'
 # gem 'hello', path: 'hello'
 
 # group :development, :test do
