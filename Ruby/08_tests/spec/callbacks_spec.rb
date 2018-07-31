@@ -11,7 +11,13 @@ RSpec.describe 'Объект' do
     end
 
     context 'с измененным значением' do
-      #08:14
+      before(:each) do
+        object.key = 'новый ключ'
+      end
+
+      it 'должен содержать новый ключ' do
+        expect(object.key).to eq('новый ключ')
+      end
     end
   end
 end
