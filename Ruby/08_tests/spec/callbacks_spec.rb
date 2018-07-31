@@ -10,5 +10,8 @@ RSpec.describe 'Объект' do
       expect(object.key).to eq('ключ')
     end
 
+    context 'с измененным значением' do
+      #08:14
+    end
   end
 end
