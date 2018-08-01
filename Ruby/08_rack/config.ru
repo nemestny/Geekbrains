@@ -18,6 +18,10 @@ map '/lobster' do
   run Rack::Lobster.new
 end
 
+map '/static' do
+  run Rack::File.new 'static'
+end
+
 use MyMiddleware
 
 run -> (env) do 
