@@ -4,3 +4,6 @@
 [submodule "Ruby/08_rails/blog"]
 	path = Ruby/08_rails/blog
 	url = C:\\Projects\\Geekbrains\\Ruby\\08_rails\\blog
+[submodule "Ruby/08_homework/task03"]
+	path = Ruby/08_homework/task03
+	url = C:\\Projects\\Geekbrains\\Ruby\\08_homework\\task03
