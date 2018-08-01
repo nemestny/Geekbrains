@@ -2,6 +2,7 @@ require 'pathname'
 
 def scan(path,counter = 0)
   entries = Dir.new(path).reject { |x| %w[. ..].include? x }.map { |x| path.join x  }
+  p entries
   entries.reduce(counter) do |counter, item|
     if File.directory? item
       scan(item, counter)
@@ -11,6 +12,7 @@ def scan(path,counter = 0)
       counter
     end
   end
+
 end
 
 path = Pathname.new('c:\Projects\Geekbrains\Ruby')

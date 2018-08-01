@@ -1,0 +1,21 @@
+require 'rubygems'
+require 'bundler/setup'
+
+def scan(path,counter = 0)
+  entries = Dir.new(path).reject { |x| %w[. ..].include? x }.map { |x| path.join x }
+  entries.reduce(counter) do |counter, item|
+    if File.directory? item
+      scan(item, counter)
+    elsif item.extname == '.rb'
+      counter + 1
+    else
+      counter
+    end
+  end
+end
+
+desc 'Возвращает количество Ruby-файлов в указанной папке и всех вложенных подпапках'
+task :scan, [:path] do |t,arg| #task01>rake scan['c:/Projects/Geekbrains/Ruby']
+  path = Pathname.new(arg[:path])
+  puts scan(path) #81              
+end
