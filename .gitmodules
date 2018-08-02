@@ -1,9 +1,7 @@
 [submodule "Ruby/08/hello"]
 	path = Ruby/08/hello
 	url = https://github.com/nemestny/hello.git
-[submodule "Ruby/08_rails/blog"]
-	path = Ruby/08_rails/blog
-	url = C:\\Projects\\Geekbrains\\Ruby\\08_rails\\blog
+
 [submodule "Ruby/08_homework/task03"]
 	path = Ruby/08_homework/task03
 	url = https://github.com/nemestny/task03.git
