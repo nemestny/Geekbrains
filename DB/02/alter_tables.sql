@@ -2,6 +2,7 @@ USE `geodata`;
 
 ALTER TABLE `_countries` DROP COLUMN `title_cz`;
 ALTER TABLE `_countries` DROP COLUMN `title_lv`;
+ALTER TABLE `_countries` DROP COLUMN `title_lt`;
 ALTER TABLE `_countries` DROP COLUMN `title_ja`;
 ALTER TABLE `_countries` DROP COLUMN `title_pl`;
 ALTER TABLE `_countries` DROP COLUMN `title_it`;
