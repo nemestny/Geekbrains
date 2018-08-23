@@ -1,10 +1,10 @@
 use `employees`;
 
-select d.dept_name, avg(s.salary) avg_salary
-from departments d
-	left join dept_emp de
-		on d.dept_no = de.dept_no
-	left join salaries s
-		on de.emp_no = s.emp_no
-group by de.dept_no
-order by avg_salary desc;
+select de.dept_no dept_no, d.dept_name, avg(s.salary)
+from dept_emp de
+left join departments d
+	on d.dept_no = de.dept_no
+left join salaries s
+	on s.emp_no = de.emp_no
+where s.to_date = '9999-01-01'
+group by dept_no;
