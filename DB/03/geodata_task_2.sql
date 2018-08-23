@@ -1,3 +1,5 @@
+use `geodata`;
+
 select r.title as Region, c.title as City
 from _regions r
 	left join _cities c
