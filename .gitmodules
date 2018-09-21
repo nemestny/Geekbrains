@@ -5,3 +5,6 @@
 [submodule "Ruby/08_homework/task03"]
 	path = Ruby/08_homework/task03
 	url = https://github.com/nemestny/task03.git
+[submodule "Rails/support_app"]
+	path = Rails/support_app
+	url = ../support_app.git
